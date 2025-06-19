@@ -5,7 +5,7 @@ export default function Dictionary() {
     let [searchWord, setSearchWord] = useState("");
 
     function handleResponse(response) {
-        console.log(response);
+        console.log(response.data);
     }
     
     function search (event) {
@@ -13,7 +13,8 @@ export default function Dictionary() {
         alert(`Searching for ${searchWord} definition`);
 
         let word = `${searchWord}`;
-        let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${word}&key=b8bt1eedc53a49e91cf7bb6aob435022`;
+        const apiKey = `b8bt1eedc53a49e91cf7bb6aob435022`;
+        let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${word}&key=${apiKey}`;
         axios.get(apiUrl).then(handleResponse);
     }
     
