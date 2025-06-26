@@ -7,13 +7,12 @@ export default function Dictionary() {
     let [results, setResults] = useState(null);
 
     function handleResponse(response) {
-        console.log(response.data);
-        setResults(response.data.meanings[0].definition);
+        console.log(response.data.word);
+        setResults(response.data);
     }
     
     function search(event) {
         event.preventDefault();
-        alert(`Searching for ${searchWord} definition`);
 
         let word = `${searchWord}`;
         const apiKey = `b8bt1eedc53a49e91cf7bb6aob435022`;
