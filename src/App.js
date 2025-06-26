@@ -12,7 +12,11 @@ function App() {
         <Dictionary />
       </main>
 
-      <footer className='App-Footer'>This dictionary app was coded by Christie Chinaka on GitHub and hosted on Netlify</footer>
+      <footer className='App-Footer'>This dictionary app was coded by {" "}
+        <a href="https://github.com/cechinaka" target="_blank " rel="noreferrer">Christie Chinaka</a> 
+        {" "}on {" "}<a href="https://github.com/cechinaka/chinaka-dictionary-app" target="_blank" rel="noreferrer">GitHub</a> 
+        {" "}and hosted on {" "}
+        <a href="https://animated-custard-47288e.netlify.app/" target="_blank" rel="noreferrer">Netlify</a></footer>.
     </div>
   );
 }
