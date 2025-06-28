@@ -8,7 +8,7 @@ export default function Dictionary() {
     let [results, setResults] = useState(null);
 
     function handleResponse(response) {
-        console.log(response.data.word);
+        console.log(response.data.phonetic);
         setResults(response.data);
     }
     
