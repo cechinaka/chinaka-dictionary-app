@@ -3,8 +3,8 @@ import axios from "axios";
 import Results from "./Results";
 import './Dictionary.css';
 
-export default function Dictionary() {
-    let [searchWord, setSearchWord] = useState("pool");
+export default function Dictionary(props) {
+    let [searchWord, setSearchWord] = useState(props.defaultSearchWord);
     let [results, setResults] = useState(null);
     let [loaded, setLoaded] = useState(false);
 

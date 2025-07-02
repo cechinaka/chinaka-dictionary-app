@@ -1,4 +1,3 @@
-
 import './App.css';
 import Dictionary from "./Dictionary";
 
@@ -9,7 +8,7 @@ function App() {
       Dictionary
       </header>
       <main className='App-Main'>
-        <Dictionary />
+        <Dictionary defaultSearchWord="pool" />
       </main>
 
       <footer className='App-Footer'>This dictionary app was coded by {" "}
