@@ -1,4 +1,10 @@
+.Meanings h3 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
 .Meanings .definitions {
     font-size: 16px;
     font-weight: 600;
 }
+

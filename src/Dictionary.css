@@ -1,3 +1,8 @@
+.Dictionary h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
 .Dictionary section {
     background: rgb(197, 226, 217);
     border-radius: 16px;
