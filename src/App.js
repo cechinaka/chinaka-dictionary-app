@@ -6,6 +6,8 @@ function App() {
     <div className="App">
       <header className='App-Header'>
       Dictionary
+      <h4>Using the <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/169/485/original/SheCodes_Logo.png?1751481705" alt="SheCodes Logo" width="35" />
+      <a href="https://shecodes.io" target="_blank" rel="noreferrer">SheCodes</a> Dictionary API</h4>
       </header>
       <main className='App-Main'>
         <Dictionary defaultSearchWord="pool" />
